@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700&display=swap');
+
+/* Colors */
+/* Blue:  rgb(69,121,225);
+Pink:  rgb(239,205,206);
+Light Blue:  #62a1d8; */
+
+
+* {
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+@media (min-width:768px) {
+  
+  body {
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column wrap;
+    /* align-content: center;
+    align-items: center; */
+    background-image: url(/projects/memory/pictures/landing/landing2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    border-bottom: 3px solid rgb(69,121,225);
+  }
+
+  header img {
+    width: 40px;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+    justify-content: left;
+    align-self: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-weight: 400;
+    font-size: 35px;
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.1em;
+    color: white;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-shadow: 0 0 10px #62a1d8;
+    margin-top: 30vh;
+    /* margin-bottom: 0px; */
+  }
+
+  /* header p {
+    color: white;
+    text-shadow: 0 0 10px #62a1d8;
+    font-size: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  } */
+
+  header button {
+    width: 130px;
+    height: 45px;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(69,121,225);
+    border: none;
+    /* box-shadow: 0 0 10px #62a1d8; */
+    box-shadow: 0 0 30px rgb(239,205,206);
+    border-radius: 3px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  header button > a {
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+  #theme {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0 12px 0;
+  }
+
+  .themeHeader {
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(69,121,225);
+  }
+
+  .container {
+    display: flex;
+    flex-flow: nowrap;
+    /* flex-direction: row;
+    justify-content: flex-start; */
+    /* width: 100vw;
+    align-content: space-between; */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* [4] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ 
+    float: left;
+    padding: 15px 0 15px 0;
+    /* width: 100vw; */
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container div {
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: row nowrap;
+      text-align: left;
+      margin: 10px 15px 20px 0px;
+      background: none;
+      width: 240px;
+      height: auto;
+      border: 0.05px solid rgb(239,205,206);
+      box-shadow: 0 0 20px rgb(239,205,206);
+      border-radius: 3px;
+    }
+
+  .container img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .container div p {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    font-size: 15px;
+    line-break: auto;
+    align-self: center;
+  }
+
+  .container div p a {
+    font-size: 15px;
+    line-break: auto;
+    text-decoration: none;
+    color: rgb(53, 93, 172);
+  }
+
+  #game {
+    background-color: rgb(69,121,225);
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    border-top: 3px solid rgb(239,205,206);
+    padding: 10px 20px 10px 20px;
+  }
+
+  #game h2 {
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+  }
+
+  .overview {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+
+  .overview .box {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    margin: 50px;
+    /* border: 0.05px solid white; */
+    box-shadow: 0 0 5px white;
+    border-radius: 3px;
+  }
+
+.level {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+
+  .levelScore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+
+  .overallScore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+  }
+
+  .text {
+  font-size: 18px;
+  align-self: center;
+  padding: 15px 15px;
+  margin: 0;
+  min-width: 60px;
+  width: auto;
+  color: black;
+  text-align: center;
+  }
+
+  .arrow {
+    font-size: 20px;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 3px;
+    color: rgb(69,121,225);
+  }
+
+  /* .overview div p {
+    /* border: 0.05px solid rgb(239,205,206); */
+  /* } */ 
+
+  #memory {
+    display: flex;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 5px white;
+    width: 675px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    /* background-color: #6589f9; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* height: 100px;
+    width: 100px; */
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+  }
+  
+  .card,
+  .back,
+  .front {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .back,
+  .front {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30.jpg') no-repeat center center / contain;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .selected {
+    /* border: 4px solid #62a1d8; */
+    transform: rotateY(180deg);
+  }
+
+  .match {
+    /* border: 4px solid rgb(239,205,206); */
+    background-image: none !important;
+  }
+
+  .match .front {
+    background: white !important;
+  }
+
+  .footer {
+    height: 20vh;
+  }
+
+}

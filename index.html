@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Beginning of header -->
+  <header>
+    <img src="../memory/pictures/logo3.png" alt="Synapses Logo" class="logo">
+    <h1>SYNAPSES</h1>
+    <!-- <p>Challenge your mind with the ultimative memory game</p> -->
+    <button class="btn-play"><a href="#theme">Train your brain</a></button>
+  </header>
+  <!-- End of header -->
+
+  <!-- Beginning of "Choose your theme" -->
+  <div id="theme">
+    <h2 class="themeHeader">Choose your theme</h2>
+    <div class="container">
+      <div class="foodndrinks" onclick="selectGrid">
+        <img src="../memory/pictures/food/fd6.jpg" alt="Food & Drinks">
+        <p> <a href="#game">Food & Drinks</a></p>
+      </div>
+      <div class="architecture" onclick="selectGrid">
+        <img src="../memory/pictures/architecture/a21.jpg" alt="Architecture">
+        <p><a href="#game">Architecture</a></p>
+      </div>
+      <div class="colorful" onclick="selectGrid">
+        <img src="../memory/pictures/Colorful/c14.jpg" alt="Colors">
+        <p><a href="#game">Colorful</a></p>
+      </div>
+      <div class="humans" onclick="selectGrid">
+        <img src="../memory/pictures/humans/h21.jpg" alt="Human">
+        <p><a href="#game">People</a></p>
+      </div>
+      <div class="animals" onclick="selectGrid">
+        <img src="../memory/pictures/animals/an7.jpg" alt="Animal">
+        <p><a href="#game">Animals</a></p>
+      </div>
+      <div class="nature" onclick="selectGrid">
+        <img src="../memory/pictures/nature/n16.jpg" alt="Nature">
+        <p><a href="#game">Nature</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- End of "Choose your theme" -->  
+
+  <!-- Beginning of "Game" -->
+  <div id="game">
+    <h2>Clear the board by finding the doubles!</h2>
+    <div class="overview">
+      <div class="level">
+        <p>Level</p>
+        <div class="box">
+          <p class="arrow"><</p>
+          <p class="text">
+            1
+          </p>
+          <p class="arrow">></p>
+        </div>
+      </div>
+      <div class="levelScore">
+        <p>Level Score</p>
+        <div class="box">
+          <p class="text"></p>
+        </div>
+      </div>
+      <div class="overallScore">
+        <p>Overall Score</p>
+        <div class="box">
+          <p class="text"></p>
+        </div>
+      </div>
+    </div>
+    <div id="memory">
+      
+    </div>
+  </div>
+  <!-- End of "Game" -->
+
+ <!-- Beginning of "Footer" -->
+  <div class="footer">
+
+  </div>
+ <!-- End of "Footer" -->
+
+  <script src="index.js"></script>
+</body>
+</html>
