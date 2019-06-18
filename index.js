@@ -1088,27 +1088,80 @@ const cardsArrayAnimalLarge = [
   }
 ]
 
+// Level Selection
+let level = 1;
+document.querySelector('.level .text').innerText = level;
+
+let levelUp = function() {
+  if (level < 3) {
+    level += 1
+  };
+  document.querySelector('.level .text').innerText = level
+  selectGrid();
+}
+document.querySelector('.level .arrowRight').onclick = levelUp;
+
+let levelDown = function() {
+  if (level >= 2) {
+    level -= 1
+  };
+  document.querySelector('.level .text').innerText = level
+  selectGrid();
+}
+document.querySelector('.level .arrowLeft').onclick = levelDown;
+
+// Loading Game Grid
 let gameGrid = [];
 
 Array.from(document.querySelectorAll('.container div')).forEach(element => {
   element.onclick = selectGrid
 })
 
+let previousTheme = "colorful";
+
 // Duplicate array to create a match for each card and select grid
 function selectGrid(e) {
-  const x = e && e.currentTarget.className
-  if (x === "foodndrinks") {
+  console.log(e)
+  const x = e && e.currentTarget.className || previousTheme
+  previousTheme = x;
+  if (x === "foodndrinks" && level === 2) {
     gameGrid = cardsArrayFoodMedium.concat(cardsArrayFoodMedium)
-  } else if (x === "architecture") {
+  } else if (x === "architecture" && level === 2) {
     gameGrid = cardsArrayArchitectureMedium.concat(cardsArrayArchitectureMedium)
-  } else if (x === "colorful") {
+  } else if (x === "colorful" && level === 2) {
     gameGrid = cardsArrayColorfulMedium.concat(cardsArrayColorfulMedium)
-  } else if (x === "animals") {
+  } else if (x === "animals" && level === 2) {
     gameGrid = cardsArrayAnimalMedium.concat(cardsArrayAnimalMedium)
-  } else if (x === "nature") {
+  } else if (x === "nature" && level === 2) {
     gameGrid = cardsArrayNatureMedium.concat(cardsArrayNatureMedium)
-  } else
+  } else if (x === "humans" && level === 2) {
   gameGrid = cardsArrayHumanMedium.concat(cardsArrayHumanMedium)
+  } else if (x === "foodndrinks" && level === 1) {
+    gameGrid = cardsArrayFoodSmall.concat(cardsArrayFoodSmall)
+  } else if (x === "architecture" && level === 1) {
+    gameGrid = cardsArrayArchitectureSmall.concat(cardsArrayArchitectureSmall)
+  } else if (x === "animals" && level === 1) {
+    gameGrid = cardsArrayAnimalSmall.concat(cardsArrayAnimalSmall)
+  } else if (x === "nature" && level === 1) {
+    gameGrid = cardsArrayNatureSmall.concat(cardsArrayNatureSmall)
+  } else if (x === "humans" && level === 1) {
+  gameGrid = cardsArrayHumanSmall.concat(cardsArrayHumanSmall)
+  } else if (x === "foodndrinks" && level === 3) {
+    gameGrid = cardsArrayFoodLarge.concat(cardsArrayFoodLarge)
+  } else if (x === "architecture" && level === 3) {
+    gameGrid = cardsArrayArchitectureLarge.concat(cardsArrayArchitectureLarge)
+  } else if (x === "colorful" && level === 3) {
+    gameGrid = cardsArrayColorfulLarge.concat(cardsArrayColorfulLarge)
+  } else if (x === "animals" && level === 3) {
+    gameGrid = cardsArrayAnimalLarge.concat(cardsArrayAnimalLarge)
+  } else if (x === "nature" && level === 3) {
+    gameGrid = cardsArrayNatureLarge.concat(cardsArrayNatureLarge)
+  } else if (x === "humans" && level === 3) {
+  gameGrid = cardsArrayHumanLarge.concat(cardsArrayHumanLarge)
+  } else {
+    level = 1;
+    gameGrid = cardsArrayColorfulSmall.concat(cardsArrayColorfulSmall)
+  } 
   setupGameGrid()
 }
 
@@ -1132,13 +1185,13 @@ selectGrid()
 function setupGameGrid() {
 
   document.querySelectorAll(".grid > div").forEach(card => {
-    console.log(card)
     document.querySelector(".grid").removeChild(card)
   })
 
+  console.log(gameGrid)
+
   // Randomize game grid on each load
   gameGrid.sort(() => 0.5 - Math.random());
-
   gameGrid.forEach(item => {
     // Create a div
     const card = document.createElement('div')
@@ -1188,8 +1241,8 @@ const resetGuesses = () => {
 let levelScore = 0;
 document.querySelector('.levelScore .text').innerText = levelScore;
 
-let overallScore = 0;
-document.querySelector('.overallScore .text').innerText = overallScore;
+// let overallScore = 0;
+// document.querySelector('.overallScore .text').innerText = overallScore;
 
 // Add event listener to grid
 grid.addEventListener('click', function(event) {

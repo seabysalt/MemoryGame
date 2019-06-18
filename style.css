@@ -10,13 +10,6 @@ Light Blue:  #62a1d8; */
   font-family: 'Noto Sans HK', sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
 @media (min-width:768px) {
   
   body {
@@ -60,18 +53,7 @@ Light Blue:  #62a1d8; */
     align-self: center;
     text-shadow: 0 0 10px #62a1d8;
     margin-top: 30vh;
-    /* margin-bottom: 0px; */
   }
-
-  /* header p {
-    color: white;
-    text-shadow: 0 0 10px #62a1d8;
-    font-size: 20px;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-  } */
 
   header button {
     width: 130px;
@@ -80,7 +62,6 @@ Light Blue:  #62a1d8; */
     font-size: 15px;
     background-color: rgb(69,121,225);
     border: none;
-    /* box-shadow: 0 0 10px #62a1d8; */
     box-shadow: 0 0 30px rgb(239,205,206);
     border-radius: 3px;
     align-content: center;
@@ -90,7 +71,6 @@ Light Blue:  #62a1d8; */
   }
 
   header button > a {
-    color: white;
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -115,17 +95,13 @@ Light Blue:  #62a1d8; */
 
   .container {
     display: flex;
-    flex-flow: nowrap;
-    /* flex-direction: row;
-    justify-content: flex-start; */
-    /* width: 100vw;
-    align-content: space-between; */
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* [4] */
-    -ms-overflow-style: -ms-autohiding-scrollbar; /* [5] */ 
+    flex-wrap: wrap;
+    justify-content: center;
     float: left;
     padding: 15px 0 15px 0;
-    /* width: 100vw; */
+    width: 100vw;
+    height: auto;
+    margin: 0;
   }
 
   .container::-webkit-scrollbar {
@@ -134,17 +110,39 @@ Light Blue:  #62a1d8; */
 
   .container div {
       display: flex;
-      flex: 0 0 auto;
-      flex-flow: row nowrap;
       text-align: left;
-      margin: 10px 15px 20px 0px;
+      margin: 10px 15px 20px 15px;
       background: none;
-      width: 240px;
+      width: 170px;
       height: auto;
       border: 0.05px solid rgb(239,205,206);
       box-shadow: 0 0 20px rgb(239,205,206);
-      border-radius: 3px;
+      border-radius: 3px; 
     }
+
+  .container div:first-child {
+    display: flex;
+    text-align: left;
+    margin: 10px 15px 20px 0px;
+    background: none;
+    width: 170px;
+    height: auto;
+    border: 0.05px solid rgb(239,205,206);
+    box-shadow: 0 0 20px rgb(239,205,206);
+    border-radius: 3px; 
+  }
+
+.container div:nth-child(2) {
+  display: flex;
+  text-align: left;
+  margin: 10px 15px 20px 15px;
+  background: none;
+  width: 200px;
+  height: auto;
+  border: 0.05px solid rgb(239,205,206);
+  box-shadow: 0 0 20px rgb(239,205,206);
+  border-radius: 3px; 
+}
 
   .container img {
     width: 80px;
@@ -154,7 +152,7 @@ Light Blue:  #62a1d8; */
   .container div p {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 20px;
+    padding-left: 18px;
     font-size: 15px;
     line-break: auto;
     align-self: center;
@@ -174,6 +172,7 @@ Light Blue:  #62a1d8; */
     flex-flow: column wrap;
     border-top: 3px solid rgb(239,205,206);
     padding: 10px 20px 10px 20px;
+    border-bottom: 10px solid white;
   }
 
   #game h2 {
@@ -234,7 +233,7 @@ Light Blue:  #62a1d8; */
   text-align: center;
   }
 
-  .arrow {
+  .arrowLeft, .arrowRight {
     font-size: 20px;
     align-self: center;
     padding: 10px 10px;
@@ -293,7 +292,7 @@ Light Blue:  #62a1d8; */
   }
 
   .front {
-    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30.jpg') no-repeat center center / contain;
+    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30c.jpg') no-repeat center center / contain;
   }
 
   .back {
@@ -320,6 +319,299 @@ Light Blue:  #62a1d8; */
 
   .footer {
     height: 20vh;
+    background-color: rgb(239,205,206)
+  }
+
+}
+
+@media (max-width:767px) {
+  
+  body {
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column wrap;
+    /* align-content: center;
+    align-items: center; */
+    background-image: url(/projects/memory/pictures/landing/landing2.jpg);
+    background-size: cover;
+    height: 30vh;
+    width: 100vw;
+    border-bottom: 2px solid rgb(69,121,225);
+  }
+
+  header img {
+    width: 2em;
+    height: auto;
+    margin: 20px 20px 20px 20px;
+    justify-content: left;
+    align-self: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.1em;
+    color: white;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-shadow: 0 0 5px #62a1d8;
+    margin-top: 4vh;
+  }
+
+  header button {
+    width: 95px;
+    height: 35px;
+    color: white;
+    background-color: rgb(69,121,225);
+    border: none;
+    /* box-shadow: 0 0 10px #62a1d8; */
+    box-shadow: 0 0 30px rgb(239,205,206);
+    border-radius: 3px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+
+  header button > a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+  }
+
+  #theme {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .themeHeader {
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(69,121,225);
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: left;
+    padding: 15px 0 15px 0;
+    width: auto;
+    margin: 0;
+  }
+
+  .container div {
+      display: flex;
+      flex-flow: wrap;
+      flex-direction: column;
+      align-content: flex-start;
+      text-align: left;
+      margin: 10px 15px 20px 15px;
+      background: none;
+      width: auto;
+      height: auto;
+      border: 0.05px solid rgb(239,205,206);
+      box-shadow: 0 0 20px rgb(239,205,206);
+      border-radius: 3px; 
+    }
+
+  .container img {
+    max-width: 80px;
+    height: 80px;
+  }
+
+  .container div p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-break: auto;
+    align-self: center;
+  }
+
+  .container div p a {
+    font-size: 12px;
+    font-family: 'Noto Sans HK', sans-serif;;
+    line-break: auto;
+    text-decoration: none;
+    color: rgb(53, 93, 172);
+  }
+
+  #game {
+    background-color: rgb(69,121,225);
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    border-top: 3px solid rgb(239,205,206);
+    padding: 10px 0px 10px 0px;
+    border-bottom: 10px solid white;
+  }
+
+  #game h2 {
+    font-family: 'Noto Sans HK', sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .overview {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+
+  .overview div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .overview .box {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    margin: 10px;
+    box-shadow: 0 0 5px white;
+    border-radius: 3px;
+    max-height: auto;
+    min-width: 20px;
+    justify-content: center;
+  }
+
+.level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 60%;
+    font-size: 12px;
+  }
+
+  .levelScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 40%;
+    font-size: 12px;
+  }
+
+  .text {
+  font-size: 10px;
+  align-self: center;
+  padding: 10px 5px;
+  margin: 0;
+  width: auto;
+  color: black;
+  text-align: center;
+  }
+
+  .arrowLeft, .arrowRight {
+    font-size: 10px;
+    align-self: center;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 3px;
+    color: rgb(69,121,225);
+  }
+
+  #memory {
+    display: flex;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 5px white;
+    width: 250px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    /* background-color: #6589f9; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* height: 100px;
+    width: 100px; */
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+  }
+  
+  .card,
+  .back,
+  .front {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .back,
+  .front {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30c.jpg') no-repeat center center / contain;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .selected {
+    /* border: 4px solid #62a1d8; */
+    transform: rotateY(180deg);
+  }
+
+  .match {
+    /* border: 4px solid rgb(239,205,206); */
+    background-image: none !important;
+  }
+
+  .match .front {
+    background: white !important;
+  }
+
+  .footer {
+    height: 20px;
+    background-color: rgb(239,205,206)
   }
 
 }
