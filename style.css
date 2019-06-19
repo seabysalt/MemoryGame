@@ -3,7 +3,19 @@
 /* Colors */
 /* Blue:  rgb(69,121,225);
 Pink:  rgb(239,205,206);
-Light Blue:  #62a1d8; */
+Light Blue:  #62a1d8; 
+Orange: rgb(224,113,38)
+Light brown: rgb(148,93,32);
+Almost white: rgb(253,250,227);
+ligther rgb(255, 253, 238);
+brown: rgb(55,31,2);
+beige: rgb(217,172,126);
+
+New:
+turquoise: rgb(179,218,217);
+pink: rgb(248, 104, 127);
+ligther white: rgb(255, 253, 238);
+*/
 
 
 * {
@@ -20,19 +32,17 @@ Light Blue:  #62a1d8; */
 
   header {
     display: flex;
-    /* justify-content: center; */
     flex-flow: column wrap;
-    /* align-content: center;
-    align-items: center; */
-    background-image: url(/projects/memory/pictures/landing/landing2.jpg);
+    background-image: url(pictures/landing/watermelonFinal.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width:100vw;
-    border-bottom: 3px solid rgb(69,121,225);
+    border-bottom: 5px solid rgb(179,218,217);
   }
 
   header img {
-    width: 40px;
+    width: 50px;
     height: auto;
     margin: 20px 20px 20px 20px;
     justify-content: left;
@@ -43,26 +53,26 @@ Light Blue:  #62a1d8; */
 
   header h1 {
     font-weight: 400;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Noto Sans HK', sans-serif;
     letter-spacing: 0.1em;
-    color: white;
+    color: rgb(255, 253, 238);
     align-content: center;
     align-items: center;
     justify-content: center;
     align-self: center;
-    text-shadow: 0 0 10px #62a1d8;
+    text-shadow: 0 0 10px rgb(179,218,217);
     margin-top: 30vh;
   }
 
   header button {
     width: 130px;
     height: 45px;
-    color: white;
+    color: rgb(253,250,227);
     font-size: 15px;
-    background-color: rgb(69,121,225);
+    background-color: rgb(179,218,217);
     border: none;
-    box-shadow: 0 0 30px rgb(239,205,206);
+    box-shadow: 0 0 10px rgb(239,205,206);
     border-radius: 3px;
     align-content: center;
     align-items: center;
@@ -79,10 +89,9 @@ Light Blue:  #62a1d8; */
   #theme {
     display: flex;
     flex-flow: column wrap;
-    padding: 10px 20px 10px 20px;
     width: 100%;
     height: 100%;
-    margin: 10px 0 12px 0;
+    margin: 20px 0 12px 0;
   }
 
   .themeHeader {
@@ -90,7 +99,10 @@ Light Blue:  #62a1d8; */
     letter-spacing: 0.01em;
     text-transform: uppercase;
     font-weight: 500;
-    color: rgb(69,121,225);
+    color: rgb(248, 104, 127);
+    font-size: 28px;
+    padding-left: 20px;
+    margin: 0;
   }
 
   .container {
@@ -102,10 +114,6 @@ Light Blue:  #62a1d8; */
     width: 100vw;
     height: auto;
     margin: 0;
-  }
-
-  .container::-webkit-scrollbar {
-    display: none;
   }
 
   .container div {
@@ -160,19 +168,23 @@ Light Blue:  #62a1d8; */
 
   .container div p a {
     font-size: 15px;
+    font-family: 'Noto Sans HK', sans-serif;;
     line-break: auto;
     text-decoration: none;
-    color: rgb(53, 93, 172);
+    color: rgb(248, 104, 127);
   }
 
   #game {
-    background-color: rgb(69,121,225);
+    background-color: rgb(179,218,217);
     height: auto;
     display: flex;
     flex-flow: column wrap;
-    border-top: 3px solid rgb(239,205,206);
-    padding: 10px 20px 10px 20px;
-    border-bottom: 10px solid white;
+    border-top: 5px solid rgb(248, 104, 127);
+    border-bottom: 5px solid white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
   }
 
   #game h2 {
@@ -181,6 +193,9 @@ Light Blue:  #62a1d8; */
     text-transform: uppercase;
     font-weight: 400;
     color: white;
+    font-size: 28px;
+    padding-left: 20px;
+    margin: 0;
   }
 
   .overview {
@@ -191,14 +206,21 @@ Light Blue:  #62a1d8; */
     align-items: center;
   }
 
+  .overview div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .overview .box {
     display: flex;
     flex-direction: row;
     background: white;
     margin: 50px;
-    /* border: 0.05px solid white; */
     box-shadow: 0 0 5px white;
     border-radius: 3px;
+    max-height: auto;
+    min-width: 20px;
+    justify-content: center;
   }
 
 .level {
@@ -206,6 +228,9 @@ Light Blue:  #62a1d8; */
     flex-direction: row;
     align-items: center;
     color: white;
+    max-width: 60%;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 
   .levelScore {
@@ -213,13 +238,9 @@ Light Blue:  #62a1d8; */
     flex-direction: row;
     align-items: center;
     color: white;
-  }
-
-  .overallScore {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
+    max-width: 40%;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 
   .text {
@@ -227,9 +248,8 @@ Light Blue:  #62a1d8; */
   align-self: center;
   padding: 15px 15px;
   margin: 0;
-  min-width: 60px;
   width: auto;
-  color: black;
+  color: rgb(248, 104, 127);
   text-align: center;
   }
 
@@ -239,7 +259,7 @@ Light Blue:  #62a1d8; */
     padding: 10px 10px;
     margin: 0;
     border-radius: 3px;
-    color: rgb(69,121,225);
+    color: rgb(248, 104, 127);
   }
 
   /* .overview div p {
@@ -266,12 +286,9 @@ Light Blue:  #62a1d8; */
   }
   
   .card {
-    /* background-color: #6589f9; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /* height: 100px;
-    width: 100px; */
     position: relative;
     transition: all 0.4s linear;
     transform-style: preserve-3d;
@@ -292,7 +309,7 @@ Light Blue:  #62a1d8; */
   }
 
   .front {
-    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30c.jpg') no-repeat center center / contain;
+    background: rgb(248, 104, 127) url('pictures/landing/watermelonSquare.jpg') no-repeat center center / contain;
   }
 
   .back {
@@ -304,12 +321,10 @@ Light Blue:  #62a1d8; */
   }
 
   .selected {
-    /* border: 4px solid #62a1d8; */
     transform: rotateY(180deg);
   }
 
   .match {
-    /* border: 4px solid rgb(239,205,206); */
     background-image: none !important;
   }
 
@@ -319,7 +334,7 @@ Light Blue:  #62a1d8; */
 
   .footer {
     height: 20vh;
-    background-color: rgb(239,205,206)
+    background-color: rgb(248, 104, 127);
   }
 
 }
@@ -335,15 +350,13 @@ Light Blue:  #62a1d8; */
 
   header {
     display: flex;
-    /* justify-content: center; */
     flex-flow: column wrap;
-    /* align-content: center;
-    align-items: center; */
-    background-image: url(/projects/memory/pictures/landing/landing2.jpg);
+    background-image: url(pictures/landing/watermelonFinal.jpg);
     background-size: cover;
+    background-position: center;
     height: 30vh;
     width: 100vw;
-    border-bottom: 2px solid rgb(69,121,225);
+    border-bottom: 5px solid rgb(179,218,217);
   }
 
   header img {
@@ -361,20 +374,20 @@ Light Blue:  #62a1d8; */
     font-size: 20px;
     font-family: 'Noto Sans HK', sans-serif;
     letter-spacing: 0.1em;
-    color: white;
+    color: rgb(255, 253, 238);
     align-content: center;
     align-items: center;
     justify-content: center;
     align-self: center;
-    text-shadow: 0 0 5px #62a1d8;
+    text-shadow: 0 0 5px rgb(179,218,217);
     margin-top: 4vh;
   }
 
   header button {
     width: 95px;
     height: 35px;
-    color: white;
-    background-color: rgb(69,121,225);
+    color: rgb(253,250,227);
+    background-color: rgb(179,218,217);
     border: none;
     /* box-shadow: 0 0 10px #62a1d8; */
     box-shadow: 0 0 30px rgb(239,205,206);
@@ -396,7 +409,7 @@ Light Blue:  #62a1d8; */
     flex-flow: column nowrap;
     width: 100%;
     height: 100%;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0 10px 0;
   }
 
   .themeHeader {
@@ -404,7 +417,7 @@ Light Blue:  #62a1d8; */
     letter-spacing: 0.01em;
     text-transform: uppercase;
     font-weight: 500;
-    color: rgb(69,121,225);
+    color: rgb(248, 104, 127);
     font-size: 18px;
     padding-left: 15px;
     margin: 0;
@@ -417,6 +430,7 @@ Light Blue:  #62a1d8; */
     float: left;
     padding: 15px 0 15px 0;
     width: auto;
+    height: auto;
     margin: 0;
   }
 
@@ -453,17 +467,18 @@ Light Blue:  #62a1d8; */
     font-family: 'Noto Sans HK', sans-serif;;
     line-break: auto;
     text-decoration: none;
-    color: rgb(53, 93, 172);
+    color: rgb(248, 104, 127);
   }
 
   #game {
-    background-color: rgb(69,121,225);
+    background-color: rgb(179,218,217);
     height: auto;
     display: flex;
     flex-flow: column wrap;
-    border-top: 3px solid rgb(239,205,206);
+    border-top: 5px solid rgb(248, 104, 127);
     padding: 10px 0px 10px 0px;
-    border-bottom: 10px solid white;
+    margin: 0;
+    border-bottom: 5px solid white;
   }
 
   #game h2 {
@@ -508,6 +523,7 @@ Light Blue:  #62a1d8; */
     color: white;
     max-width: 60%;
     font-size: 12px;
+    text-transform: uppercase;
   }
 
   .levelScore {
@@ -517,6 +533,7 @@ Light Blue:  #62a1d8; */
     color: white;
     max-width: 40%;
     font-size: 12px;
+    text-transform: uppercase;
   }
 
   .text {
@@ -525,8 +542,8 @@ Light Blue:  #62a1d8; */
   padding: 10px 5px;
   margin: 0;
   width: auto;
-  color: black;
   text-align: center;
+  color: rgb(248, 104, 127);
   }
 
   .arrowLeft, .arrowRight {
@@ -535,7 +552,7 @@ Light Blue:  #62a1d8; */
     padding: 10px 10px;
     margin: 0;
     border-radius: 3px;
-    color: rgb(69,121,225);
+    color: rgb(248, 104, 127);
   }
 
   #memory {
@@ -558,12 +575,9 @@ Light Blue:  #62a1d8; */
   }
   
   .card {
-    /* background-color: #6589f9; */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /* height: 100px;
-    width: 100px; */
     position: relative;
     transition: all 0.4s linear;
     transform-style: preserve-3d;
@@ -584,7 +598,7 @@ Light Blue:  #62a1d8; */
   }
 
   .front {
-    background: rgb(239,205,206) url('/projects/memory/pictures/food/fd30c.jpg') no-repeat center center / contain;
+    background: rgb(248, 104, 127) url('pictures/landing/watermelonSquare.jpg') no-repeat center center / contain;
   }
 
   .back {
@@ -596,12 +610,10 @@ Light Blue:  #62a1d8; */
   }
 
   .selected {
-    /* border: 4px solid #62a1d8; */
     transform: rotateY(180deg);
   }
 
   .match {
-    /* border: 4px solid rgb(239,205,206); */
     background-image: none !important;
   }
 
@@ -611,7 +623,7 @@ Light Blue:  #62a1d8; */
 
   .footer {
     height: 20px;
-    background-color: rgb(239,205,206)
+    background-color: rgb(248, 104, 127);
   }
 
 }
