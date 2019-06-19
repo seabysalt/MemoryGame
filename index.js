@@ -2,7 +2,7 @@
 const cardsArrayColorfulSmall = [
   {
     name: 'c1',
-    img: 'pictures/special/dancing.gif',
+    img: 'pictures/colorful/c1.jpg',
   },
   {
     name: 'c7',
@@ -677,53 +677,53 @@ const cardsArrayHumanLarge = [
     img: 'pictures/humans/h30.jpg',
   },
   {
-    name: 'h15',
-    img: 'pictures/humans/h15.jpg',
+    name: 'h1',
+    img: 'pictures/humans/h1.jpg',
   },
   {
-    name: 'h16',
-    img: 'pictures/humans/h16.jpg',
+    name: 'h2',
+    img: 'pictures/humans/h2.jpg',
   },
 
   {
-    name: 'h18',
-    img: 'pictures/humans/h18.jpg',
+    name: 'h3',
+    img: 'pictures/humans/h3.jpg',
   },
   {
-    name: 'h19',
-    img: 'pictures/humans/h19.jpg',
+    name: 'h4',
+    img: 'pictures/humans/h4.jpg',
   },
   {
-    name: 'h20',
-    img: 'pictures/humans/h20.jpg',
+    name: 'h5',
+    img: 'pictures/humans/h5.jpg',
   },
   {
-    name: 'h21',
-    img: 'pictures/humans/h21.jpg',
+    name: 'h6',
+    img: 'pictures/humans/h6.jpg',
   },
   {
-    name: 'h22',
-    img: 'pictures/humans/h22.jpg',
+    name: 'h7',
+    img: 'pictures/humans/h7.jpg',
   },
   {
-    name: 'h23',
-    img: 'pictures/humans/h23.jpg',
+    name: 'h9',
+    img: 'pictures/humans/h9.jpg',
   },
   {
-    name: 'h24',
-    img: 'pictures/humans/h24.jpg',
+    name: 'h10',
+    img: 'pictures/humans/h10.jpg',
   },
   {
-    name: 'h25',
-    img: 'pictures/humans/h25.jpg',
+    name: 'h11',
+    img: 'pictures/humans/h11.jpg',
   },
   {
-    name: 'h26',
-    img: 'pictures/humans/h26.jpg',
+    name: 'h12',
+    img: 'pictures/humans/h12.jpg',
   },
   {
-    name: 'h30',
-    img: 'pictures/humans/h30.jpg',
+    name: 'h13',
+    img: 'pictures/humans/h13.jpg',
   },
 ]
 
@@ -858,53 +858,53 @@ const cardsArrayArchitectureLarge = [
     img: 'pictures/architecture/a29.jpg',
   },
   {
-    name: 'a1',
-    img: 'pictures/architecture/a1.jpg',
+    name: 'a4',
+    img: 'pictures/architecture/a4.jpg',
   },
   {
-    name: 'a3',
-    img: 'pictures/architecture/a3.jpg',
+    name: 'a7',
+    img: 'pictures/architecture/a7.jpg',
   },
 
   {
-    name: 'a5',
-    img: 'pictures/architecture/a5.jpg',
+    name: 'a23',
+    img: 'pictures/architecture/a23.jpg',
   },
   {
-    name: 'a6',
-    img: 'pictures/architecture/a6.jpg',
+    name: 'a24',
+    img: 'pictures/architecture/a24.jpg',
   },
   {
-    name: 'a8',
-    img: 'pictures/architecture/a8.jpg',
+    name: 'a25',
+    img: 'pictures/architecture/a25.jpg',
   },
   {
-    name: 'a10',
-    img: 'pictures/architecture/a10.jpg',
+    name: 'a26',
+    img: 'pictures/architecture/a26.jpg',
   },
   {
-    name: 'a22',
-    img: 'pictures/architecture/a22.jpg',
+    name: 'a27',
+    img: 'pictures/architecture/a27.jpg',
   },
   {
-    name: 'a21',
-    img: 'pictures/architecture/a21.jpg',
+    name: 'a2',
+    img: 'pictures/architecture/a2.jpg',
   },
   {
-    name: 'a30',
-    img: 'pictures/architecture/a30.jpg',
+    name: 'a20',
+    img: 'pictures/architecture/a20.jpg',
   },
   {
-    name: 'a15',
-    img: 'pictures/architecture/a15.jpg',
+    name: 'a16',
+    img: 'pictures/architecture/a16.jpg',
   },
   {
-    name: 'a28',
-    img: 'pictures/architecture/a28.jpg',
+    name: 'a17',
+    img: 'pictures/architecture/a17.jpg',
   },
   {
-    name: 'a29',
-    img: 'pictures/architecture/a29.jpg',
+    name: 'a18',
+    img: 'pictures/architecture/a18.jpg',
   },
 ]
 
@@ -1039,54 +1039,59 @@ const cardsArrayAnimalLarge = [
     img: 'pictures/animals/an30.jpg',
   },
   {
-    name: 'an2',
-    img: 'pictures/animals/an2.jpg',
+    name: 'an10',
+    img: 'pictures/animals/an10.jpg',
   },
   {
-    name: 'an3',
-    img: 'pictures/animals/an3.jpg',
+    name: 'an14',
+    img: 'pictures/animals/an14.jpg',
   },
   {
-    name: 'an7',
-    img: 'pictures/animals/an7.jpg',
+    name: 'an4',
+    img: 'pictures/animals/an4.jpg',
   },
   {
-    name: 'an6',
-    img: 'pictures/animals/an6.jpg',
+    name: 'an5',
+    img: 'pictures/animals/an5.jpg',
   },
   {
-    name: 'an8',
-    img: 'pictures/animals/an8.jpg',
+    name: 'an20',
+    img: 'pictures/animals/an20.jpg',
   },
   {
-    name: 'an9',
-    img: 'pictures/animals/an9.jpg',
+    name: 'an21',
+    img: 'pictures/animals/an21.jpg',
   },
   {
-    name: 'an11',
-    img: 'pictures/animals/an11.jpg',
+    name: 'an22',
+    img: 'pictures/animals/an22.jpg',
   },
   {
-    name: 'an12',
-    img: 'pictures/animals/an12.jpg',
+    name: 'an23',
+    img: 'pictures/animals/an23.jpg',
   },
   {
-    name: 'an13',
-    img: 'pictures/animals/an13.jpg',
+    name: 'an24',
+    img: 'pictures/animals/an24.jpg',
   },
   {
-    name: 'an16',
-    img: 'pictures/animals/an16.jpg',
+    name: 'an25',
+    img: 'pictures/animals/an25.jpg',
   },
   {
-    name: 'an18',
-    img: 'pictures/animals/an18.jpg',
+    name: 'an26',
+    img: 'pictures/animals/an26.jpg',
   },
   {
-    name: 'an30',
-    img: 'pictures/animals/an30.jpg',
+    name: 'an27',
+    img: 'pictures/animals/an27.jpg',
   }
 ]
+
+const specialArray = { 
+  name: 'special',
+  img: 'pictures/special/dancing.gif'
+  };
 
 // Level Selection
 let level = 1;
@@ -1165,7 +1170,17 @@ function selectGrid(e) {
 
   // on random occasions
   // replace an element in the array gameGrid with a random gif
+  // function swapCards(n){
 
+    let randIdx = Math.floor(Math.random()*gameGrid.length/2);
+
+    let ratio = 2
+    let a = Math.floor(Math.random()*ratio)
+    if(a === 0) {
+      gameGrid.splice(randIdx, 1, specialArray);
+      gameGrid.splice(randIdx+gameGrid.length/2, 1, specialArray);
+    // } else return
+    }
 
   setupGameGrid()
 }
@@ -1221,7 +1236,6 @@ function setupGameGrid() {
   });
 }
 
-// setupGameGrid()
 
 // Add match CSS
 const match = () => {
@@ -1264,18 +1278,25 @@ grid.addEventListener('click', function(event) {
     if (count === 1) {
       // Assign first guess
       firstGuess = clicked.parentNode.dataset.name
-      console.log(firstGuess)
+      console.log("first",firstGuess)
       clicked.parentNode.classList.add('selected')
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name
-      console.log(secondGuess)
+      console.log("sec",secondGuess)
       clicked.parentNode.classList.add('selected')
     }
     // If both guesses are not empty...
     if (firstGuess !== '' && secondGuess !== '') {
       // and the first guess matches the second match...
-      if (firstGuess === secondGuess) {
+      if (firstGuess === secondGuess && firstGuess === 'special') {
+        // run the match function
+        setTimeout(match, delay)
+        setTimeout(resetGuesses, delay);
+        levelScore += 40;
+        document.querySelector('.levelScore .text').innerText = levelScore;
+      } 
+      if (firstGuess === secondGuess && firstGuess !== 'special') {
         // run the match function
         setTimeout(match, delay)
         setTimeout(resetGuesses, delay);
