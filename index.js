@@ -1300,13 +1300,4 @@ grid.addEventListener('click', function(event) {
   }
 })
 
-
-
-
-
-
-
-
-
-
-
+// Music Player

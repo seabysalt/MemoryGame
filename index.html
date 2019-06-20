@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Memory</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="pictures/logo/logoTurquoise.png">
 </head>
 <body>
   <!-- Beginning of header -->
@@ -53,30 +54,44 @@
   <div id="game">
     <h2>Clear the board by finding the doubles!</h2>
     <div class="overview">
-      <div class="level">
-        <p>Level</p>
-        <div class="box">
-          <p class="arrowLeft"><</p>
-          <p class="text">
-          </p>
-          <p class="arrowRight">></p>
+        <div class="level">
+          <p>Level</p>
+          <div class="box">
+            <p class="arrowLeft"><</p>
+            <p class="text">
+            </p>
+            <p class="arrowRight">></p>
+          </div>
         </div>
-      </div>
-      <div class="levelScore">
-        <p>Level Score</p>
-        <div class="box">
-          <p class="text"></p>
+        <div class="levelScore">
+          <p>Level Score</p>
+          <div class="box">
+            <p class="text"></p>
+          </div>
         </div>
-      </div>
-      <div class="sound"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4rhbAjLO1qBS" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-      <!-- <div class="overallScore">
-        <p>Overall Score</p>
-        <div class="box">
-          <p class="text"></p>
+        <div class="musicPlayer">
+          <audio src="music/city.m4a" loop id="audioPlayer">Sorry, your browser doesn't support the audio player</audio>
+          <div class="sound"> 
+              <button onclick="document.getElementById('audioPlayer').play()"><img src="music/playBtn.png" alt="Play" class="playBtn"></button> 
+              <button onclick="document.getElementById('audioPlayer').pause()"><img src="music/pauseButton.png" alt="Play" class="pauseBtn"></button>
+              <!-- <img src="music/volumeBtn.png" alt="Volume" class="volume"> -->
+              <!-- <div class="vControl">
+                <button onclick="document.getElementById('audioPlayer').volume -= 0.1"><img src="music/quietBtn.png" alt="-" class="chooseV"></button> 
+                <button onclick="document.getElementById('audioPlayer').volume += 0.1"><img src="music/louderBtn.png" alt="+" class="chooseV"></button> 
+              </div>   -->
+          </div>
+          <!-- <div class="volumeSlider">
+              <button onclick="document.getElementById('audioPlayer').volume -= 0.1"><img src="music/quietBtn.png" alt="-" class="chooseV"></button> 
+              <button onclick="document.getElementById('audioPlayer').volume += 0.1"><img src="music/louderBtn.png" alt="+" class="chooseV"></button> 
+          </div> -->
         </div>
-      </div> -->
-    </div>
+        <!-- <div class="overallScore">
+          <p>Overall Score</p>
+          <div class="box">
+            <p class="text"></p>
+          </div>
+        </div> -->
+      </div>
     <div id="memory">
       
     </div>
