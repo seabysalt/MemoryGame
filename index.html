@@ -69,28 +69,24 @@
             <p class="text"></p>
           </div>
         </div>
-        <div class="musicPlayer">
-          <audio src="music/city.m4a" loop id="audioPlayer">Sorry, your browser doesn't support the audio player</audio>
-          <div class="sound"> 
-              <button onclick="document.getElementById('audioPlayer').play()"><img src="music/playBtn.png" alt="Play" class="playBtn"></button> 
-              <button onclick="document.getElementById('audioPlayer').pause()"><img src="music/pauseButton.png" alt="Play" class="pauseBtn"></button>
-              <!-- <img src="music/volumeBtn.png" alt="Volume" class="volume"> -->
-              <!-- <div class="vControl">
-                <button onclick="document.getElementById('audioPlayer').volume -= 0.1"><img src="music/quietBtn.png" alt="-" class="chooseV"></button> 
-                <button onclick="document.getElementById('audioPlayer').volume += 0.1"><img src="music/louderBtn.png" alt="+" class="chooseV"></button> 
-              </div>   -->
+        <div class="player">
+          <audio src="music/city.m4a" loop id="myAudioTag"></audio>
+            <div id="info" class="info">
+              <span class="artist">Flume</span>
+              <span class="name">Say it</span>
+              <div class="progress-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div id="control-panel" class="control-panel">
+              <div class="album-art"></div>
+              <div class="controls">
+                <div class="prev"></div>
+                <div id="play" class="play"></div>
+                <div class="next"></div>
+              </div>
+            </div>
           </div>
-          <!-- <div class="volumeSlider">
-              <button onclick="document.getElementById('audioPlayer').volume -= 0.1"><img src="music/quietBtn.png" alt="-" class="chooseV"></button> 
-              <button onclick="document.getElementById('audioPlayer').volume += 0.1"><img src="music/louderBtn.png" alt="+" class="chooseV"></button> 
-          </div> -->
-        </div>
-        <!-- <div class="overallScore">
-          <p>Overall Score</p>
-          <div class="box">
-            <p class="text"></p>
-          </div>
-        </div> -->
       </div>
     <div id="memory">
       
@@ -118,5 +114,6 @@
  <!-- End of "Footer" -->
 
   <script src="index.js"></script>
+  <script src="musicPlayer.js"></script>
 </body>
 </html>
