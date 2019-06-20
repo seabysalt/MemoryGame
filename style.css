@@ -224,6 +224,8 @@ ligther white: rgb(255, 253, 238);
     max-height: auto;
     min-width: 20px;
     justify-content: center;
+    z-index: 5;
+    box-shadow: 0px 20px 20px 5px rgba(132, 132, 132, 0.3);
   }
 
 .level {
@@ -282,6 +284,8 @@ ligther white: rgb(255, 253, 238);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    z-index: 5;
+    box-shadow: 0px 20px 20px 5px rgba(132, 132, 132, 0.3);
   }
   
   .card {
@@ -456,7 +460,7 @@ html, body {
 } */
 
 .player {
-  /* position: relative; */
+  position: relative;
 }
 .player .info {
   position: absolute;
@@ -466,7 +470,7 @@ html, body {
   left: 10px;
   right: 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 5px 15px 5px 110px;
+  padding: 5px 15px 5px 40px;
   border-radius: 15px;
   transition: all .5s ease;
 }
@@ -475,9 +479,9 @@ html, body {
   display: block;
 }
 .player .info .artist {
-  color: #222;
+  color: rgb(248, 104, 127);
   font-size: 16px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .player .info .name {
   color: #999;
@@ -508,15 +512,15 @@ html, body {
   position: relative;
   background-color: #fff;
   border-radius: 5px;
-  width: 250px;
-  height: 80px;
+  width: 200px;
+  height: 60px;
   z-index: 5;
   box-shadow: 0px 20px 20px 5px rgba(132, 132, 132, 0.3);
 }
 .player .control-panel .album-art {
   position: absolute;
-  left: 20px;
-  top: -15px;
+  left: -20px;
+  top: -30px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -548,7 +552,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60px;
-  background-image: url("pictures/landing/watermelonSquare.jpg");
+  background-image: url("music/watermelonRotate.png");
 }
 .player .control-panel.active .album-art {
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
@@ -571,7 +575,7 @@ html, body {
 .player .control-panel .controls {
   display: flex;
   justify-content: flex-end;
-  height: 80px;
+  height: 60px;
   padding: 0 15px;
   width: 100vw;
 }
@@ -609,7 +613,6 @@ html, body {
 .player .control-panel.active .controls .play {
   background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIzMi42NzkgMjMyLjY3OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjMyLjY3OSAyMzIuNjc5OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjEyOHB4IiBoZWlnaHQ9IjEyOHB4Ij4KPGcgaWQ9IlBhdXNlIj4KCTxwYXRoIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDsiIGQ9Ik04MC41NDMsMEgzNS43OTdjLTkuODg1LDAtMTcuODk4LDguMDE0LTE3Ljg5OCwxNy44OTh2MTk2Ljg4MyAgIGMwLDkuODg1LDguMDEzLDE3Ljg5OCwxNy44OTgsMTcuODk4aDQ0Ljc0NmM5Ljg4NSwwLDE3Ljg5OC04LjAxMywxNy44OTgtMTcuODk4VjE3Ljg5OEM5OC40NCw4LjAxNCw5MC40MjcsMCw4MC41NDMsMHogTTE5Ni44ODIsMCAgIGgtNDQuNzQ2Yy05Ljg4NiwwLTE3Ljg5OSw4LjAxNC0xNy44OTksMTcuODk4djE5Ni44ODNjMCw5Ljg4NSw4LjAxMywxNy44OTgsMTcuODk5LDE3Ljg5OGg0NC43NDYgICBjOS44ODUsMCwxNy44OTgtOC4wMTMsMTcuODk4LTE3Ljg5OFYxNy44OThDMjE0Ljc4MSw4LjAxNCwyMDYuNzY3LDAsMTk2Ljg4MiwweiIgZmlsbD0iI2MyYzZjZiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=);
 }
-
 }
 
 @media (max-width:767px) {
@@ -787,6 +790,8 @@ html, body {
     max-height: auto;
     min-width: 20px;
     justify-content: center;
+    z-index: 5;
+    box-shadow: 0px 20px 20px 5px rgba(132, 132, 132, 0.3);
   }
 
 .level {
@@ -845,6 +850,8 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    z-index: 5;
+    box-shadow: 0px 20px 20px 5px rgba(132, 132, 132, 0.3);
   }
   
   .card {
