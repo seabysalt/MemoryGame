@@ -335,6 +335,27 @@ ligther white: rgb(255, 253, 238);
   .footer {
     height: 20vh;
     background-color: rgb(248, 104, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    align-content: space-between;
+  }
+
+  .icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  .icons img {
+    margin: 0 10px;
+    align-self: center;
+  }
   }
 
 }
@@ -622,8 +643,35 @@ ligther white: rgb(255, 253, 238);
   }
 
   .footer {
-    height: 20px;
+    height: 100px;
     background-color: rgb(248, 104, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    align-content: space-evenly;
+  }
+
+  .footer p {
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+
+  .icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  .icons img {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    align-self: center;
   }
 
 }
