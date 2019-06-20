@@ -1124,9 +1124,8 @@ Array.from(document.querySelectorAll('.container div')).forEach(element => {
 
 let previousTheme = "colorful";
 
-// Duplicate array to create a match for each card and select grid
+// Duplicating array to create a match for each card and select grid
 function selectGrid(e) {
-  console.log(e)
   const x = e && e.currentTarget.className || previousTheme
   previousTheme = x;
   if (x === "foodndrinks" && level === 2) {
@@ -1168,18 +1167,13 @@ function selectGrid(e) {
     gameGrid = cardsArrayColorfulSmall.concat(cardsArrayColorfulSmall)
   } 
 
-  // on random occasions
-  // replace an element in the array gameGrid with a random gif
-  // function swapCards(n){
-
+  // On random occasions replacing an element in the array gameGrid with a random gif
     let randIdx = Math.floor(Math.random()*gameGrid.length/2);
-
     let ratio = 2
     let a = Math.floor(Math.random()*ratio)
     if(a === 0) {
       gameGrid.splice(randIdx, 1, specialArray);
       gameGrid.splice(randIdx+gameGrid.length/2, 1, specialArray);
-    // } else return
     }
 
   setupGameGrid()
@@ -1191,12 +1185,12 @@ let count = 0
 let previousTarget = null;
 let delay = 1200;
 
-// Grab the div with an id of root
+// Grabbing the div with an id of root
 const memory = document.getElementById('memory')
-// Create a section with a class of grid
+// Creating a section with a class of grid
 const grid = document.createElement('section')
 grid.setAttribute('class', 'grid')
-// Append the grid section to the game div
+// Appending the grid section to the game div
 memory.appendChild(grid)
 
 selectGrid()
@@ -1207,9 +1201,6 @@ function setupGameGrid() {
   document.querySelectorAll(".grid > div").forEach(card => {
     document.querySelector(".grid").removeChild(card)
   })
-
-  console.log(gameGrid)
-
   // Randomize game grid on each load
   gameGrid.sort(() => 0.5 - Math.random());
   gameGrid.forEach(item => {
@@ -1236,7 +1227,6 @@ function setupGameGrid() {
   });
 }
 
-
 // Add match CSS
 const match = () => {
   let selected = document.querySelectorAll('.selected')
@@ -1260,15 +1250,12 @@ const resetGuesses = () => {
 let levelScore = 0;
 document.querySelector('.levelScore .text').innerText = levelScore;
 
-// let overallScore = 0;
-// document.querySelector('.overallScore .text').innerText = overallScore;
-
 // Add event listener to grid
 grid.addEventListener('click', function(event) {
   // The event target is our clicked item
   let clicked = event.target
 
-  // Do not allow the grid section itself to be selected; only select divs inside the grid
+  // Only selecting divs inside the grid
   if (clicked.nodeName === 'SECTION' || clicked === previousTarget || clicked.parentNode.classList.contains('selected') || clicked.parentNode.classList.contains('match')) {
     return
   }
@@ -1283,12 +1270,11 @@ grid.addEventListener('click', function(event) {
     } else {
       // Assign second guess
       secondGuess = clicked.parentNode.dataset.name
-      console.log("sec",secondGuess)
+      console.log("second",secondGuess)
       clicked.parentNode.classList.add('selected')
     }
     // If both guesses are not empty...
     if (firstGuess !== '' && secondGuess !== '') {
-      // and the first guess matches the second match...
       if (firstGuess === secondGuess && firstGuess === 'special') {
         // run the match function
         setTimeout(match, delay)
@@ -1297,7 +1283,6 @@ grid.addEventListener('click', function(event) {
         document.querySelector('.levelScore .text').innerText = levelScore;
       } 
       if (firstGuess === secondGuess && firstGuess !== 'special') {
-        // run the match function
         setTimeout(match, delay)
         setTimeout(resetGuesses, delay);
         levelScore += 20;
