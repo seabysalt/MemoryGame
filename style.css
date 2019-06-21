@@ -309,6 +309,7 @@ ligther white: rgb(255, 253, 238);
   .front {
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .front {
@@ -781,6 +782,7 @@ ligther white: rgb(255, 253, 238);
   .front {
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
   .front {
