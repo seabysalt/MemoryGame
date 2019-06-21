@@ -41,6 +41,7 @@ ligther white: rgb(255, 253, 238);
     font-size: 16px;
     border: none;
     cursor: pointer;
+    height: auto;
   }
 
   .dropbtn:focus, .dropbtn:active, .dropbtnactive, .dropbtn:focus:active {
@@ -83,6 +84,7 @@ ligther white: rgb(255, 253, 238);
     background-color: none;
   }
 
+
   header {
     display: flex;
     flex-flow: column wrap;
@@ -102,6 +104,7 @@ ligther white: rgb(255, 253, 238);
     align-self: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+    margin-left: 15px;
   }
 
   header h1 {
@@ -590,6 +593,7 @@ ligther white: rgb(255, 253, 238);
     font-size: 14px;
     border: none;
     cursor: pointer;
+    height: auto;
   }
 
   .dropbtn:focus, .dropbtn:active, .dropbtnactive, .dropbtn:focus:active {
@@ -654,6 +658,7 @@ ligther white: rgb(255, 253, 238);
     align-self: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+
   }
 
   header h1 {
