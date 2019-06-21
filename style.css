@@ -129,7 +129,7 @@ ligther white: rgb(255, 253, 238);
     font-size: 15px;
     background-color: rgb(179,218,217);
     border: none;
-    box-shadow: 0 0 10px rgb(239,205,206);
+    box-shadow: 0 0 3px rgb(239,205,206);
     border-radius: 3px;
     align-content: center;
     align-items: center;
@@ -685,8 +685,7 @@ ligther white: rgb(255, 253, 238);
     color: rgb(253,250,227);
     background-color: rgb(179,218,217);
     border: none;
-    /* box-shadow: 0 0 10px #62a1d8; */
-    box-shadow: 0 0 30px rgb(239,205,206);
+    box-shadow: 0 0 3px rgb(239,205,206);
     border-radius: 3px;
     align-content: center;
     align-items: center;
