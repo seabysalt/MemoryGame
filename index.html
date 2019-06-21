@@ -11,7 +11,14 @@
 <body>
   <!-- Beginning of header -->
   <header>
-    <img src='pictures/logo/logoTurquoise.png' alt="Synapses Logo" class="logo">
+      <div class="dropdown">
+          <button class="dropbtn"><img src='pictures/logo/logoTurquoise.png' alt="Synapses Logo" class="logo"></button>
+          <div class="dropdown-content">
+            <a href="#theme">Theme</a>
+            <a href="#game">Game</a>
+            <a href="#share">Share</a>
+          </div>
+      </div>
     <h1>SYNAPSES</h1>
     <!-- <p>Challenge your mind with the ultimative memory game</p> -->
     <button class="btn-play"><a href="#theme">Train your brain</a></button>
@@ -96,7 +103,7 @@
   <!-- End of "Game" -->
 
  <!-- Beginning of "Footer" -->
-  <div class="footer">
+  <div class="footer" id="share">
     <p>Feel free to share this if you like it!</p>
     <div class="icons">
       <span class="facebook" onclick="window.open('http://www.facebook.com/sharer.php?u=https://seabysalt.github.io/MemoryGame'); return false">
